@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ffe8f1, #fff7fa);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor {
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjeta {
+    width: 480px;
+    max-width: 100%;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.12);
+}
+
+.icono {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background-color: #f4a4c4;
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: #d85b91;
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.mensaje {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+/* Información de la cita */
+
+.informacion {
+    background-color: #fff3f8;
+    border-radius: 18px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.dato {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 13px 5px;
+    border-bottom: 1px solid #f4d8e4;
+}
+
+.dato:last-child {
+    border-bottom: none;
+}
+
+.dato > span {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.dato h3 {
+    color: #d85b91;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.dato p {
+    color: #666;
+    font-size: 14px;
+}
+
+/* Mensaje inferior */
+
+.nota {
+    color: #777;
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+/* Botón */
+
+.boton {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    background-color: #e875a5;
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background-color: #d85b91;
+    transform: translateY(-2px);
+}
+
+.volver {
+    display: inline-block;
+    margin-top: 18px;
+    color: #d85b91;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.volver:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+
+@media (max-width: 500px) {
+
+    .contenedor {
+        padding: 15px;
+    }
+
+    .tarjeta {
+        padding: 30px 22px;
+    }
+
+    .icono {
+        width: 70px;
+        height: 70px;
+        font-size: 38px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .informacion {
+        padding: 15px;
+    }
+}

@@ -1,0 +1,636 @@
+/* =========================================
+   CONFIGURACIÓN GENERAL
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #fff5f8;
+
+    color: #4a2633;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   ENCABEZADO
+========================================= */
+
+.encabezado {
+    width: 100%;
+
+    min-height: 90px;
+
+    background-color: #ffffff;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 10px 8%;
+
+    box-shadow: 0 3px 15px rgba(214, 51, 108, 0.12);
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.logo {
+    display: flex;
+
+    align-items: center;
+}
+
+.logo img {
+    width: 75px;
+
+    height: 75px;
+
+    object-fit: contain;
+
+    border-radius: 15px;
+
+    transition: 0.3s;
+}
+
+.logo img:hover {
+    transform: scale(1.08);
+}
+
+
+/* =========================================
+   MENÚ
+========================================= */
+
+.menu {
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+}
+
+.menu a {
+    color: #6b3045;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #d6336c;
+}
+
+
+/* =========================================
+   PRESENTACIÓN
+========================================= */
+
+.presentacion {
+    min-height: 400px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 70px 20px;
+
+    background: linear-gradient(
+        135deg,
+        #ffe4ec,
+        #fff5f8
+    );
+}
+
+.contenido-presentacion {
+    max-width: 700px;
+}
+
+
+/* Icono principal */
+
+.icono-principal {
+    width: 110px;
+
+    height: 110px;
+
+    margin: 0 auto 25px;
+
+    background-color: #ffffff;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 55px;
+
+    box-shadow:
+        0 8px 25px rgba(214, 51, 108, 0.15);
+}
+
+
+/* Título */
+
+.contenido-presentacion h1 {
+    color: #d6336c;
+
+    font-size: 45px;
+
+    margin-bottom: 20px;
+}
+
+
+/* Descripción */
+
+.contenido-presentacion p {
+    color: #6f6267;
+
+    font-size: 18px;
+
+    max-width: 650px;
+
+    margin: auto;
+}
+
+
+/* =========================================
+   SECCIÓN DE PRECIOS
+========================================= */
+
+.precios {
+    background-color: #ffffff;
+
+    padding: 80px 8%;
+}
+
+
+/* Título */
+
+.titulo-seccion {
+    text-align: center;
+
+    margin-bottom: 55px;
+}
+
+.titulo-seccion h2 {
+    color: #d6336c;
+
+    font-size: 35px;
+
+    margin-bottom: 15px;
+}
+
+.titulo-seccion p {
+    color: #777;
+
+    font-size: 17px;
+}
+
+
+/* =========================================
+   TARJETAS DE PRECIOS
+========================================= */
+
+.contenedor-precios {
+    max-width: 1150px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+
+    align-items: stretch;
+}
+
+
+.tarjeta-precio {
+    position: relative;
+
+    background-color: #ffffff;
+
+    border: 2px solid #ffd6e2;
+
+    border-radius: 22px;
+
+    padding: 35px 25px;
+
+    text-align: center;
+
+    box-shadow:
+        0 8px 25px rgba(214, 51, 108, 0.10);
+
+    transition: 0.3s;
+}
+
+
+.tarjeta-precio:hover {
+    transform: translateY(-10px);
+
+    border-color: #f3a9c1;
+
+    box-shadow:
+        0 15px 35px rgba(214, 51, 108, 0.20);
+}
+
+
+/* =========================================
+   TARJETA DESTACADA
+========================================= */
+
+.tarjeta-precio.destacada {
+    border: 3px solid #d6336c;
+
+    transform: scale(1.03);
+}
+
+.tarjeta-precio.destacada:hover {
+    transform: scale(1.03) translateY(-10px);
+}
+
+
+/* Etiqueta */
+
+.etiqueta {
+    position: absolute;
+
+    top: -15px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    background-color: #d6336c;
+
+    color: white;
+
+    padding: 7px 18px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   ICONOS
+========================================= */
+
+.icono {
+    width: 80px;
+
+    height: 80px;
+
+    margin: 10px auto 20px;
+
+    background-color: #ffe4ec;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 38px;
+}
+
+
+/* =========================================
+   TÍTULO DE TARJETA
+========================================= */
+
+.tarjeta-precio h3 {
+    color: #d6336c;
+
+    font-size: 24px;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================================
+   DESCRIPCIÓN
+========================================= */
+
+.descripcion {
+    color: #777;
+
+    font-size: 14px;
+
+    min-height: 70px;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================================
+   PRECIO
+========================================= */
+
+.precio {
+    color: #b52d5b;
+
+    font-size: 34px;
+
+    font-weight: bold;
+
+    margin: 20px 0;
+}
+
+.precio span {
+    display: block;
+
+    color: #888;
+
+    font-size: 13px;
+
+    font-weight: normal;
+
+    margin-top: -5px;
+}
+
+
+/* =========================================
+   LISTA
+========================================= */
+
+.tarjeta-precio ul {
+    list-style: none;
+
+    text-align: left;
+
+    margin: 25px 0;
+}
+
+.tarjeta-precio li {
+    color: #666;
+
+    font-size: 14px;
+
+    padding: 7px 0;
+
+    border-bottom: 1px solid #ffe4ec;
+}
+
+
+/* =========================================
+   BOTÓN
+========================================= */
+
+.boton {
+    display: inline-block;
+
+    width: 100%;
+
+    background: linear-gradient(
+        135deg,
+        #d6336c,
+        #e85d8a
+    );
+
+    color: white;
+
+    padding: 13px 20px;
+
+    border-radius: 25px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background: linear-gradient(
+        135deg,
+        #b82b5a,
+        #d6336c
+    );
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 7px 18px rgba(214, 51, 108, 0.25);
+}
+
+
+/* =========================================
+   INFORMACIÓN
+========================================= */
+
+.informacion {
+    padding: 70px 20px;
+
+    background: linear-gradient(
+        135deg,
+        #fff0f5,
+        #ffe4ec
+    );
+
+    text-align: center;
+}
+
+.contenido-informacion {
+    max-width: 750px;
+
+    margin: auto;
+}
+
+.contenido-informacion h2 {
+    color: #d6336c;
+
+    font-size: 32px;
+
+    margin-bottom: 20px;
+}
+
+.contenido-informacion p {
+    color: #6f6267;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+}
+
+
+/* Nota */
+
+.contenido-informacion .nota {
+    margin-top: 25px;
+
+    font-size: 13px;
+
+    color: #888;
+
+    font-style: italic;
+}
+
+
+/* =========================================
+   PIE DE PÁGINA
+========================================= */
+
+footer {
+    background-color: #d6336c;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px 20px;
+
+    font-size: 14px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+
+/* =========================================
+   TABLETS
+========================================= */
+
+@media (max-width: 950px) {
+
+    .contenedor-precios {
+        grid-template-columns: 1fr;
+
+        max-width: 500px;
+    }
+
+    .tarjeta-precio.destacada {
+        transform: none;
+    }
+
+    .tarjeta-precio.destacada:hover {
+        transform: translateY(-10px);
+    }
+}
+
+
+/* =========================================
+   CELULARES
+========================================= */
+
+@media (max-width: 650px) {
+
+    .encabezado {
+        flex-direction: column;
+
+        gap: 15px;
+
+        padding: 15px;
+    }
+
+    .logo img {
+        width: 70px;
+
+        height: 70px;
+    }
+
+    .menu {
+        gap: 15px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .menu a {
+        font-size: 14px;
+    }
+
+    .presentacion {
+        min-height: 350px;
+
+        padding: 60px 20px;
+    }
+
+    .contenido-presentacion h1 {
+        font-size: 35px;
+    }
+
+    .contenido-presentacion p {
+        font-size: 16px;
+    }
+
+    .precios {
+        padding: 60px 20px;
+    }
+
+    .titulo-seccion h2 {
+        font-size: 28px;
+    }
+
+    .precio {
+        font-size: 30px;
+    }
+}
+
+
+/* =========================================
+   CELULARES PEQUEÑOS
+========================================= */
+
+@media (max-width: 400px) {
+
+    .contenido-presentacion h1 {
+        font-size: 30px;
+    }
+
+    .menu {
+        gap: 10px;
+    }
+
+    .menu a {
+        font-size: 13px;
+    }
+
+    .tarjeta-precio {
+        padding: 30px 20px;
+    }
+}

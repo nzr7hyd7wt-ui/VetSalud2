@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ffe8f1, #fff6fa);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjeta {
+    width: 420px;
+    background-color: white;
+    padding: 45px 40px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.icono {
+    width: 85px;
+    height: 85px;
+    margin: 0 auto 25px;
+    border-radius: 50%;
+    background-color: #f6a6c5;
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: #d85b91;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.mensaje {
+    color: #555;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.descripcion {
+    color: #777;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.boton {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    background-color: #e875a5;
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background-color: #d85b91;
+    transform: translateY(-2px);
+}
+
+.volver {
+    display: inline-block;
+    margin-top: 20px;
+    color: #d85b91;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.volver:hover {
+    text-decoration: underline;
+}
+
+/* Adaptación para celulares */
+
+@media (max-width: 500px) {
+
+    .tarjeta {
+        width: 100%;
+        padding: 35px 25px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .icono {
+        width: 75px;
+        height: 75px;
+        font-size: 40px;
+    }
+}

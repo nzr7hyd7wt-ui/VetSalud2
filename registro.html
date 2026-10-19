@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - VetSalud</title>
+
+    <link rel="stylesheet" href="css/estiloslogin.css">
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <div class="registro">
+
+            <div class="logo">
+                <img src="img/logo.jpeg" alt="Logo VetSalud">
+                <h1>VetSalud</h1>
+            </div>
+
+            <h2>Crear una cuenta</h2>
+
+            <p class="texto">
+                Regístrate en VetSalud para gestionar fácilmente
+                los servicios y citas de tu mascota.
+            </p>
+
+            <form>
+
+                <div class="grupo">
+                    <label for="nombre">Nombre completo</label>
+                    <input 
+                        type="text" 
+                        id="nombre" 
+                        name="nombre"
+                        placeholder="Ingresa tu nombre"
+                        required>
+                </div>
+
+                <div class="grupo">
+                    <label for="correo">Correo electrónico</label>
+                    <input 
+                        type="email" 
+                        id="correo" 
+                        name="correo"
+                        placeholder="Ingresa tu correo"
+                        required>
+                </div>
+
+                <div class="grupo">
+                    <label for="telefono">Número de teléfono</label>
+                    <input 
+                        type="tel" 
+                        id="telefono" 
+                        name="telefono"
+                        placeholder="Ingresa tu teléfono"
+                        required>
+                </div>
+
+                <div class="grupo">
+                    <label for="contrasena">Contraseña</label>
+                    <input 
+                        type="password" 
+                        id="contrasena" 
+                        name="contrasena"
+                        placeholder="Crea una contraseña"
+                        required>
+                </div>
+
+                <div class="grupo">
+                    <label for="confirmar">Confirmar contraseña</label>
+                    <input 
+                        type="password" 
+                        id="confirmar" 
+                        name="confirmar"
+                        placeholder="Repite tu contraseña"
+                        required>
+                </div>
+
+                <div class="terminos">
+                    <input type="checkbox" id="terminos" required>
+
+                    <label for="terminos">
+                        Acepto los términos y condiciones de VetSalud
+                    </label>
+                </div>
+
+                <button type="submit">
+                    Crear cuenta
+                </button>
+
+            </form>
+
+            <p class="iniciar">
+                ¿Ya tienes una cuenta?
+                <a href="login.html">Inicia sesión</a>
+            </p>
+
+            <a href="index.html" class="volver">
+                ← Volver al inicio
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

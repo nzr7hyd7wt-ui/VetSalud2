@@ -1,0 +1,182 @@
+/* ===== ESTILO GENERAL ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    /* Fondo rosado suave */
+    background: linear-gradient(135deg, #ffe4ec, #fff5f8);
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #4a2633;
+}
+
+
+/* ===== CONTENEDOR ===== */
+
+.contenedor-recuperar {
+    width: 90%;
+    max-width: 450px;
+
+    background-color: white;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    /* Sombra rosada */
+    box-shadow: 0 10px 30px rgba(214, 80, 120, 0.20);
+
+    text-align: center;
+
+    border: 1px solid #ffd1df;
+}
+
+
+/* ===== TÍTULO ===== */
+
+.contenedor-recuperar h2 {
+    color: #d6336c;
+
+    font-size: 28px;
+
+    margin-bottom: 15px;
+}
+
+
+/* ===== TEXTO ===== */
+
+.contenedor-recuperar p {
+    color: #777;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+
+    margin-bottom: 30px;
+}
+
+
+/* ===== FORMULARIO ===== */
+
+#formRecuperar {
+    text-align: left;
+}
+
+
+/* ===== ETIQUETA ===== */
+
+#formRecuperar label {
+    display: block;
+
+    color: #b52d5b;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+}
+
+
+/* ===== INPUT ===== */
+
+#formRecuperar input {
+    width: 100%;
+
+    padding: 14px;
+
+    border: 2px solid #f3b6c9;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    font-size: 15px;
+
+    background-color: #fffafa;
+
+    transition: 0.3s;
+
+    margin-bottom: 20px;
+}
+
+
+/* Cuando haces clic en el input */
+
+#formRecuperar input:focus {
+    border-color: #d6336c;
+
+    box-shadow: 0 0 8px rgba(214, 51, 108, 0.20);
+}
+
+
+/* ===== BOTÓN ===== */
+
+#formRecuperar button {
+    width: 100%;
+
+    padding: 14px;
+
+    background: linear-gradient(135deg, #d6336c, #e85d8a);
+
+    color: white;
+
+    border: none;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+/* Efecto al pasar el mouse */
+
+#formRecuperar button:hover {
+    background: linear-gradient(135deg, #b82b5a, #d6336c);
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 5px 15px rgba(214, 51, 108, 0.30);
+}
+
+
+/* ===== ENLACE ===== */
+
+.enlaces-retorno {
+    margin-top: 25px;
+}
+
+
+.enlaces-retorno a {
+    color: #d6336c;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+
+.enlaces-retorno a:hover {
+    color: #a61e4d;
+
+    text-decoration: underline;
+}
